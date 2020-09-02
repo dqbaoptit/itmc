@@ -1,0 +1,9 @@
+.courses {
+  padding: 2rem 5rem;
+
+  &__cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

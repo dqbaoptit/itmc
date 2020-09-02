@@ -1,0 +1,118 @@
+.price-card {
+  margin: 1rem;
+  max-width: 100%;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 15px 6px rgba(80, 98, 134, 0.05);
+  border-radius: 35px;
+  text-align: center;
+  max-height: 100%;
+
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.3s all ease-in-out;
+  }
+  &--content {
+    height: 30%;
+  }
+  &--type-1 {
+    background: #f1f3f5;
+    color: #495057;
+  }
+  &--type-2 {
+    background: #fff5f5;
+    color: #ef4b4b;
+  }
+  &--type-3 {
+    background: #e7f5ff;
+    color: #228be6;
+  }
+  &--type-4 {
+    color: #f59f00;
+    background: #fff9db;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    letter-spacing: 0.4px;
+  }
+  &__desc {
+    padding: 1rem 1rem;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: center;
+
+    color: #adb5bd;
+  }
+  &__price {
+    padding: 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 2rem;
+    letter-spacing: 0.4px;
+
+    color: #495057;
+    .price-vnd {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 2rem;
+
+      letter-spacing: 0.4px;
+
+      color: #495057;
+      opacity: 0.5;
+    }
+  }
+  &__btn {
+    max-width: 50%;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2rem;
+
+    text-align: center;
+    cursor: pointer;
+
+    color: #ffffff;
+    &--type-1 {
+      background: #495057;
+    }
+    &--type-2 {
+      background: #ef4b4b;
+    }
+    &--type-3 {
+      background: #228be6;
+    }
+    &--type-4 {
+      background: #f59f00;
+    }
+    cursor: pointer;
+    transition: ease-in-out all 0.3s;
+
+    & p {
+      padding: 1rem;
+    }
+    &:hover {
+      transform: scale(1.02);
+      transition: ease-in-out all 0.3s;
+    }
+  }
+  &__features {
+    white-space: nowrap;
+    padding: -1rem;
+    & ul {
+      list-style: none;
+    }
+    &__item {
+      display: flex;
+    }
+    &__item:before {
+      content: '✓';
+      margin: 1rem 0.2rem;
+    }
+  }
+}

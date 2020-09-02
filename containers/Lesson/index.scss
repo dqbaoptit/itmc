@@ -1,0 +1,34 @@
+.lesson {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 6rem;
+
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    color: #1d2b3a;
+  }
+  &__author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: #afadad;
+    color: #525457;
+  }
+  &__content {
+    padding: 2rem;
+  }
+}

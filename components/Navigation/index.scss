@@ -1,0 +1,109 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.4rem 0rem 1.4rem;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 3rem;
+
+  text-align: center;
+  letter-spacing: 0.04rem;
+
+  color: #495057;
+
+  border-bottom: 1px solid #dee2e6;
+  &__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 149.5%;
+
+    font-variant: small-caps;
+    color: #adb5bd;
+    & ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      padding-bottom: 1rem;
+      margin-left: 3rem;
+      cursor: pointer;
+      &--active {
+        cursor: pointer;
+        color: #495057;
+        border-bottom: 5px solid #ef4b4b;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__list {
+      margin: 0px 1rem;
+      cursor: pointer;
+    }
+    &__user {
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    cursor: pointer;
+  }
+}
+.menu-drop {
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(217, 137, 137, 0.52);
+  border-radius: 6px;
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    cursor: pointer;
+    & h4 {
+      margin-left: 1rem;
+    }
+    &__icon {
+      border-radius: 10px;
+      background-color: #fff;
+      color: #b3b3b3;
+
+      padding: 0.3rem;
+      &--active {
+        color: #ffffff;
+        background: #ef4b4b;
+
+        box-shadow: 0px 4px 20px rgba(222, 70, 70, 0.26);
+      }
+    }
+    &__text {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      letter-spacing: 0.835px;
+
+      color: #adb5bd;
+      &--active {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.835px;
+
+        /* Gray/Gray-7 */
+        color: #495057;
+      }
+    }
+  }
+}
+
+.MuiPaper-elevation16 {
+  margin-top: 5rem !important;
+}

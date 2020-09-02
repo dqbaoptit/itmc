@@ -1,0 +1,47 @@
+.course {
+  padding: 3rem 10rem;
+
+  &__header {
+    padding: 2rem;
+    border-radius: 25px 25px 0px 0px;
+    border: 1px solid #495057;
+    background-color: #cccccc;
+    background-image: url('https://lh3.googleusercontent.com/proxy/dLFgfbqnvJljcYZaWwseDpfTtmS9dbuVXwSihx2q5eO-Btd6fwYhEvWlLriUL5-1-bkHjdrVhrwoDlmMDhELmeEIba4XLxN7aXG2PJr5ThAbiM9Dp0861FX4ScKXVc0aceP9MwagawREOqdUzUpByj0JxA');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__name {
+      text-align: center;
+      padding: 2rem;
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.5px;
+
+      color: #eee;
+    }
+    &__author {
+      font-weight: bold;
+      font-size: 0.3rem;
+      line-height: 2.2rem;
+      letter-spacing: 0.5px;
+
+      color: #eee;
+    }
+    &__desc {
+      padding: 2rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #eee;
+    }
+  }
+  &__lesson {
+    padding: 2rem 2rem;
+    background: #fff;
+    border: 1px solid #f2f7fc;
+    border-radius: 0px 0px 25px 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 15px 6px rgba(80, 98, 134, 0.05);
+  }
+}
