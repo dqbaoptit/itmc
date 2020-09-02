@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './index.scss';
 import NotesIcon from '@material-ui/icons/Notes';
-import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { useRouter } from 'next/router';
 import { SwipeableDrawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
@@ -72,9 +72,12 @@ const Nav = () => {
           )}
           <div
             className="nav__right__user"
-            onClick={() => router.push('/profile')}
+            onClick={() => {
+              localStorage.clear();
+              window.location.reload(false);
+            }}
           >
-            <AccountCircleOutlinedIcon style={{ fontSize: 30 }} />
+            <ExitToAppIcon style={{ fontSize: 30 }} />
           </div>
         </div>
         <SwipeableDrawer
