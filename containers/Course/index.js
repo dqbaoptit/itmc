@@ -43,7 +43,6 @@ export default function Course() {
             <div key={item._id}>
               <Lesson
                 title={item.name}
-                content={item.content.split(' ')}
                 onClick={() => router.push(`/l/${item._id}?c=${course._id}`)}
               />
             </div>
